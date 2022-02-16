@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesi 10 JQuery</title>
+  </head>
+  <body>
+    <h1>click</h1>
+    <p id="click">Teks ini akan hilang jika diklik.</p>
+    <h1>dbclick</h1>
+    <p id="dbclick">Teks ini akan hilang jika diklik dua kali.</p>
+    <h1>hover</h1>
+    <p id="hover">Halo! Nama saya adalah</p>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#click").click(function () {
+          $("#click").hide();
+        });
+      });
+      $("#dbclick").dblclick(function () {
+        $("#dbclick").hide();
+      });
+      $("#hover").hover(function () {
+        alert("Fuady Anwar Sufijanto");
+      });
+    </script>
+  </body>
+</html>
